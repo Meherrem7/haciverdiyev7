@@ -1,0 +1,412 @@
+/* Ümumi Stilin Qurulması */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Sosial Paylaşma Bölməsi */
+.social-share {
+    padding: 50px 20px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+}
+
+.social-share h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Sosial Paylaşma Düymələri */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Twitter Düyməsi */
+.social-btn.twitter {
+    background: #1da1f2;
+}
+
+/* Facebook Düyməsi */
+.social-btn.facebook {
+    background: #3b5998;
+}
+
+/* LinkedIn Düyməsi */
+.social-btn.linkedin {
+    background: #0077b5;
+}
+
+/* WhatsApp Düyməsi */
+.social-btn.whatsapp {
+    background: #25d366;
+}
+
+
+/* Navigasiya Menyusu */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1e90ff;
+}
+
+/* Başlıq (Header) */
+.header {
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.header .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: fadeInDown 2s ease-out;
+}
+
+.header p {
+    font-size: 20px;
+    color: #bbb;
+    animation: fadeInUp 3s ease-out;
+}
+
+/* Animasiya */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Haqqımda Bölməsi */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #111;
+    animation: slideIn 1s ease-out;
+}
+
+/* Layihələr Bölməsi */
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+    background: #222;
+    animation: slideIn 1s ease-out;
+}
+
+.project-card {
+    background: #333;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Əlaqə Bölməsi */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #111;
+    animation: slideIn 1s ease-out;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border: 2px solid #1e90ff;
+}
+
+form button {
+    padding: 10px;
+    font-size: 18px;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #155b9b;
+    transform: scale(1.1);
+}
+
+/* Animasiya - Yavaşca Hərəkət edən Elementlər */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* İntensiv Hərəkət */
+.header img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+/* Testimoniallar Bölməsi */
+.testimonials {
+    background: #222;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial-card {
+    background: #333;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Canlı Saat */
+.live-clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+/* Ziyarətçi Sayğacı */
+.visitor-counter {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 1000;
+}
+/* Canlı Tədbirlər Bölməsi */
+.live-events {
+    padding: 50px 20px;
+    background: #222;
+    text-align: center;
+    color: #fff;
+}
+
+.live-events h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.event-card {
+    background: #333;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.event-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.event-link {
+    font-size: 18px;
+    color: #1e90ff;
+    text-decoration: none;
+    border: 2px solid #1e90ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.event-link:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+/* Canlı Tədbir Vaxtı Sayğacı */
+.live-event-timer {
+    font-size: 20px;
+    color: #1e90ff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Abunəlik Formu Üslubu */
+.subscribe {
+    padding: 50px 20px;
+    text-align: center;
+    background: #222;
+}
+
+.subscribe h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.subscribe p {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background: #155b9b;
+}
+#audio-player {
+    border: 2px solid #080d13;
+    border-radius: 10px;
+    padding: 5px;
+}
+#audio-player::-webkit-media-controls-panel {
+    background-color: #222;
+}
+
+
